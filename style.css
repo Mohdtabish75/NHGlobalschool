@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-inner .carousel-caption h1{
+    font-size: 3rem;
+}
+#content{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 98vw;
+}
+
+.navbar>.container-fluid{
+    padding-left: 10px;
+}
+
+#notice img{
+    width: 100vw;
+    height: 40vh;
+}
+#notice h1{
+    color: rgb(248, 88, 9);
+    font-size: 3rem;
+}
+#about{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: black;
+    
+    
+}
+#about-us p{
+    text-align: justify;
+    padding: 10px;
+    color: rgb(248, 88, 9);
+    backdrop-filter: blur(5px);
+    
+}
+#about h1{
+    color: rgb(248, 88, 9);
+    font-size: 4rem;
+}
+
+#register{
+    backdrop-filter: blur(20px);
+    padding: 10px;
+    background-image: url(11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 98vw;
+}
+#rizwan{
+    background-image: url(nat.jpg);
+    background-size: cover;
+    background-position: 100%;
+}
+#our-staff h1{
+    color: rgb(248, 88, 9);
+    font-size: 4rem;
+    backdrop-filter: blur(10px);
+}
+#rizwan h3,h6{
+    color: rgb(109, 248, 9);
+}
+#rizwan-sir{
+    display: flex;
+    flex-wrap: wrap;
+    backdrop-filter: blur(20px);
+    gap: 10px;
+    justify-content: center;
+}
+#rizwan-sir img{
+    width: 80vw;
+    height: 55vh;
+}
+footer{
+    width: 100vw;
+    height: 40vh;
+    background-color: gray;
+}
+footer a,ul{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    float: left;
+    flex-direction: column;
+}
+footer h3{
+    float: left;
+    text-align: center;
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    .carousel-inner .carousel-caption h1{
+        font-size: 2.4rem;
+    }
+    #about{
+        width: 100vw;
+        height: 40vh;
+    }
+    #notice img{
+        width: 90vw;
+        height: 100vh;
+    }
+    #about p{
+        width: 80vw;
+    }
+}
+@media screen and (max-width:767px){
+    #about{
+        height: 65vh;
+        animation: slide 2s ease-in;
+    }
+    @keyframes slide {
+        0%{
+          transform: translateY(100%);
+          rotate: 60deg;  
+        }
+    }
+    
+}
+@media screen and (min-width:992px){
+    #notice img{
+        width: 80vw;
+        height: 100vh;
+    }
+    #about p{
+        width: 80vw;
+    }
+    #nizaqat p{
+        width: 80vw;
+    }
+    #rizwan-f img{
+        width: 20vw;
+    }
+    #rizwan{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    #rizwan-sir img{
+        width: 40vw;
+    }
+}
